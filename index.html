@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f6f5fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16151c" media="(prefers-color-scheme: dark)">
+<title>VariLiveLog｜Varium 同接ランキング（非公式）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <h1>VariLiveLog<small>Varium 同接ランキング（非公式）</small></h1>
+    <p class="checked" id="checked">読み込み中…</p>
+  </div>
+  <nav class="tabs" id="tabs" role="tablist">
+    <button role="tab" data-tab="today">今日</button>
+    <button role="tab" data-tab="yesterday">昨日</button>
+    <button role="tab" data-tab="week">直近7日</button>
+    <button role="tab" data-tab="month">月別</button>
+    <button role="tab" data-tab="schedule">予定</button>
+  </nav>
+  <div class="months" id="months" hidden></div>
+</header>
+
+<main>
+  <div class="banner" id="banner" hidden></div>
+  <p class="range" id="range"></p>
+  <ol class="ranking" id="ranking"></ol>
+  <p class="empty" id="empty" hidden></p>
+
+  <section class="schedule" id="schedule" hidden></section>
+
+  <section class="upcoming" id="upcoming-wrap" hidden>
+    <h2>このあと</h2>
+    <ul id="upcoming"></ul>
+  </section>
+</main>
+
+<footer>
+  <p id="about"></p>
+  <p>Varium メンバーの配信だけを集めた非公式のランキングです。</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
